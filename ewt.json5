@@ -1,7 +1,7 @@
 {
   id: 888,
   name: '升学e网通自定义辅助订阅',
-  version: 1,
+  version: 2,
   author: '🐺',
   supportUri: 'https://github.com/OpenWIth5507/EWT360-Helper-For-GKD/issues',
   categories: [
@@ -12,6 +12,10 @@
     {
       id: 'com.mistong.ewt360',
       name: '升学e网通',
+      categories: [
+    { key: 0, name: '功能辅助', enable: true },
+    { key: 1, name: '广告跳过', enable: true }
+  ],
       groups: [
         {
           key: 0,
@@ -62,7 +66,7 @@
           ]
         },
         {
-          key: 5,
+          key: 3,
           name: '看完自动返回',
           enable: true,
           category: 0,
@@ -78,7 +82,7 @@
           ]
         },
         {
-          key: 6,
+          key: 4,
           name: '点击“我的”',
           enable: true,
           category: 0,
@@ -94,7 +98,7 @@
           ]
         },
         {
-          key: 7,
+          key: 5,
           name: '点击“我的任务”',
           enable: true,
           category: 0,
@@ -110,7 +114,7 @@
           ]
         },
         {
-          key: 8,
+          key: 6,
           name: '点击任务卡片',
           enable: true,
           category: 0,
@@ -129,7 +133,7 @@
           ]
         },
         {
-          key: 9,
+          key: 7,
           name: '自动看课',
           enable: true,
           category: 0,
