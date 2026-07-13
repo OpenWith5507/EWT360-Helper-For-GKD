@@ -55,7 +55,6 @@
           name: '关闭弹窗广告',
           enable: true,
           category: 1,
-          activityIds: ['androidx.activity.ComponentDialog','com.mistong.ewt360.ui.activity.MainActivity'],
           snapshotUrls: [
             'https://i.gkd.li/snapshot/1753222882146'
           ],
