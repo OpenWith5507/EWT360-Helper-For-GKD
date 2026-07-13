@@ -1,7 +1,7 @@
 {
   id: 888,
   name: '升学e网通自定义辅助订阅',
-  version: 3,
+  version: 4,
   author: '🐺',
   supportUri: 'https://github.com/OpenWIth5507/EWT360-Helper-For-GKD/issues',
   categories: [
@@ -21,13 +21,13 @@
           key: 0,
           name: '认真度检测',
           enable: true,
-          activityIds: [com.mistong.ewt360.homework.view.homework.NewHomeworkVideoPlayActivity'],
           category: 0,
           snapshotUrls: [
             'https://i.gkd.li/snapshot/1753194891194'
           ],
           rules: [
             {
+              activityIds: [com.mistong.ewt360.homework.view.homework.NewHomeworkVideoPlayActivity'],
               matches: [
                 'TextView[id="com.mistong.ewt360:id/tv_pass"]'
               ]
@@ -70,13 +70,13 @@
           key: 3,
           name: '看完自动返回',
           enable: true,
-          activityIds: ['com.mistong.ewt360.homework.view.homework.NewHomeworkVideoPlayActivity'],
           category: 0,
           snapshotUrls: [
             'https://i.gkd.li/snapshot/1753224680022'
           ],
           rules: [
             {
+              activityIds: ['com.mistong.ewt360.homework.view.homework.NewHomeworkVideoPlayActivity'],
               matches: [
                 'TextView[text="返回任务列表"]'
               ]
@@ -87,13 +87,13 @@
           key: 4,
           name: '点击“我的”',
           enable: true,
-          activityIds: ['com.mistong.ewt360.ui.activity.MainActivity'],
           category: 0,
           snapshotUrls: [
             'https://i.gkd.li/snapshot/1783679309094'
           ],
           rules: [
             {
+              activityIds: ['com.mistong.ewt360.ui.activity.MainActivity'],
               matches: [
                 '@ViewGroup > [id="com.mistong.ewt360:id/tv_label"][text="我的"]'
               ]
@@ -104,13 +104,13 @@
           key: 5,
           name: '点击“我的任务”',
           enable: true,
-          activityIds: ['com.mistong.ewt360.ui.activity.MainActivity'],
           category: 0,
           snapshotUrls: [
             'https://i.gkd.li/snapshot/1783679313115'
           ],
           rules: [
             {
+              activityIds: ['com.mistong.ewt360.ui.activity.MainActivity'],
               matches: [
                 '@ViewGroup > [id="com.mistong.ewt360:id/tv_function"][text="我的任务"]'
               ]
@@ -121,16 +121,15 @@
           key: 6,
           name: '点击任务卡片',
           enable: true,
-          activityIds: ['com.mistong.ewt360.web.WebActivity'],
           category: 0,
           snapshotUrls: [
             'https://i.gkd.li/snapshot/1783679346168'
           ],
           activityIds: [
-            'com.mistong.ewt360.web.WebActivity'
           ],
           rules: [
             {
+              activityIds: ['com.mistong.ewt360.web.WebActivity'],
               matches: [
                 'TextView[text^="去学习"]'
               ]
@@ -140,17 +139,14 @@
         {
           key: 7,
           name: '自动看课',
-          activityIds: ['com.mistong.ewt360.web.WebActivity'],
           enable: true,
           category: 0,
           snapshotUrls: [
             'https://i.gkd.li/snapshot/1783679346168'
           ],
-          activityIds: [
-            'com.mistong.ewt360.web.WebActivity'
-          ],
           rules: [
             {
+              activityIds: ['com.mistong.ewt360.web.WebActivity'],
               matches: [
                 'TextView[text*="学"][text!*="天"][text!*="数"][text!*=""][text!*="化"][text!*="必"]'
               ]
