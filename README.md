@@ -12,3 +12,4 @@
 ## 订阅链接
 复制下方链接导入订阅
 https://raw.githubusercontent.com/OpenWith5507/EWT360-Helper-For-GKD/main/ewt.json5
+备用链接https://git.silica.codes/OpenWith/test/raw/branch/main/ewt.json5
