@@ -1,137 +1,135 @@
-{
-  id: 888,
-  name: '升学e网通自定义辅助订阅',
-  version: 5,
-  author: '🐺',
-  supportUri: 'https://github.com/OpenWIth5507/EWT360-Helper-For-GKD/issues',
-  categories: [
-    { key: 0, name: '功能辅助', enable: true },
-    { key: 1, name: '广告跳过', enable: true }
-  ],
-  apps: [
+{id: 888, name: '升学e网通自定义辅助订阅', version: 5,author: '🐺',supportUri: 'https://github.com/OpenWIth5507/EWT360-Helper-For-GKD/issues', categories: [{key: 0, name: '功能辅助', enable: true}, {key: 1, name: '广告跳过', enable: true}], apps:[{
+  id: 'com.mistong.ewt360',
+  groups: [
     {
-      id: 'com.mistong.ewt360',
-      name: '升学e网通',
-      categories: [
-    { key: 0, name: '功能辅助', enable: true },
-    { key: 1, name: '广告跳过', enable: true }
-  ],
-      groups: [
+      key: 0,
+      name: '认真度检测',
+      snapshotUrls: [
+        'https://i.gkd.li/snapshot/1753194891194',
+      ],
+      rules: [
         {
-          key: 0,
-          name: '认真度检测',
-          enable: true,
-          category: 0,
-          snapshotUrls: 'https://i.gkd.li/snapshot/1753194891194',
-          rules: [
-            {
-              key: 0,
-              activityIds: 'com.mistong.ewt360.homework.view.homework.NewHomeworkVideoPlayActivity',
-              matches: 'TextView[id="com.mistong.ewt360:id/tv_pass"]'
-            }
-          ]
-        },
-        {
-          key: 1,
-          name: '跳过开屏广告',
-          enable: true,
-          category: 1,
-          snapshotUrls: 'https://i.gkd.li/snapshot/1753223726038',
-          rules: [
-            {
-              key: 0,
-              matches: 'TextView[id="com.mistong.ewt360:id/tv_time_countdown"]'
-            }
-          ]
-        },
-        {
-          key: 2,
-          name: '关闭弹窗广告',
-          enable: true,
-          category: 1,
-          snapshotUrls: 'https://i.gkd.li/snapshot/1753222882146',
-          rules: [
-            {
-              key: 0,
-              matches: 'ImageView[id="com.mistong.ewt360:id/core_activity_iv_close"]'
-            }
-          ]
-        },
-        {
-          key: 3,
-          name: '看完自动返回',
-          enable: true,
-          category: 0,
-          snapshotUrls: 'https://i.gkd.li/snapshot/1753224680022',
-          rules: [
-            {
-              key: 0,
-              activityIds: 'com.mistong.ewt360.homework.view.homework.NewHomeworkVideoPlayActivity',
-              matches: 'TextView[text="返回任务列表"]'
-            }
-          ]
-        },
-        {
-          key: 4,
-          name: '点击“我的”',
-          enable: true,
-          category: 0,
-          snapshotUrls: 'https://i.gkd.li/snapshot/1783679309094',
-          rules: [
-            {
-              key: 0,
-              activityIds: 'com.mistong.ewt360.ui.activity.MainActivity',
-              matches: '@ViewGroup > [id="com.mistong.ewt360:id/tv_label"][text="我的"]'
-            }
-          ]
-        },
-        {
-          key: 5,
-          name: '点击“我的任务”',
-          enable: true,
-          category: 0,
-          snapshotUrls: 'https://i.gkd.li/snapshot/1783679313115',
-          rules: [
-            {
-              key: 0,
-              activityIds: 'com.mistong.ewt360.ui.activity.MainActivity',
-              matches: '@ViewGroup > [id="com.mistong.ewt360:id/tv_function"][text="我的任务"]'
-            }
-          ]
-        },
-        {
-          key: 6,
-          name: '点击任务卡片',
-          enable: true,
-          category: 0,
-          snapshotUrls: 'https://i.gkd.li/snapshot/1783679346168',
+          matches: [
+            'TextView[id="com.mistong.ewt360:id/tv_pass"]',
+          ],
           activityIds: [
+            'com.mistong.ewt360.homework.view.homework.NewHomeworkVideoPlayActivity',
           ],
-          rules: [
-            {
-              key: 0,
-              activityIds: 'com.mistong.ewt360.web.WebActivity',
-              matches: 'TextView[text^="去学习"]'
-            }
-          ]
         },
+      ],
+    },
+    {
+      key: 1,
+      name: '跳过开屏广告',
+      snapshotUrls: [
+        'https://i.gkd.li/snapshot/1753223726038',
+      ],
+      rules: [
         {
-          key: 7,
-          name: '自动看课',
-          enable: true,
-          category: 0,
-          snapshotUrls: [
-            'https://i.gkd.li/snapshot/1783679346168'
+          matches: [
+            'TextView[id="com.mistong.ewt360:id/tv_time_countdown"]',
           ],
-          rules: [
-            {
-              key: 0,
-              activityIds: 'com.mistong.ewt360.web.WebActivity',
-              matches: 'TextView[text*="学"][text!*="天"][text!*="数"][text!*=""][text!*="化"][text!*="必"]'
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+        },
+      ],
+    },
+    {
+      key: 2,
+      name: '关闭弹窗广告',
+      snapshotUrls: [
+        'https://i.gkd.li/snapshot/1753222882146',
+      ],
+      rules: [
+        {
+          matches: [
+            'ImageView[id="com.mistong.ewt360:id/core_activity_iv_close"]',
+          ],
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '看完自动返回',
+      snapshotUrls: [
+        'https://i.gkd.li/snapshot/1753224680022',
+      ],
+      rules: [
+        {
+          matches: [
+            'TextView[text="返回任务列表"]',
+          ],
+          activityIds: [
+            'com.mistong.ewt360.homework.view.homework.NewHomeworkVideoPlayActivity',
+          ],
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '点击“我的”',
+      snapshotUrls: [
+        'https://i.gkd.li/snapshot/1783679309094',
+      ],
+      rules: [
+        {
+          matches: [
+            '@ViewGroup > [id="com.mistong.ewt360:id/tv_label"][text="我的"]',
+          ],
+          activityIds: [
+            'com.mistong.ewt360.ui.activity.MainActivity',
+          ],
+        },
+      ],
+    },
+    {
+      key: 5,
+      name: '点击“我的任务”',
+      snapshotUrls: [
+        'https://i.gkd.li/snapshot/1783679313115',
+      ],
+      rules: [
+        {
+          matches: [
+            '@ViewGroup > [id="com.mistong.ewt360:id/tv_function"][text="我的任务"]',
+          ],
+          activityIds: [
+            'com.mistong.ewt360.ui.activity.MainActivity',
+          ],
+        },
+      ],
+    },
+    {
+      key: 6,
+      name: '点击任务卡片',
+      snapshotUrls: [
+        'https://i.gkd.li/snapshot/1783679346168',
+      ],
+      rules: [
+        {
+          matches: [
+            'TextView[text^="去学习"]',
+          ],
+          activityIds: [
+            'com.mistong.ewt360.web.WebActivity',
+          ],
+        },
+      ],
+    },
+    {
+      key: 7,
+      name: '自动看课',
+      snapshotUrls: [
+        'https://i.gkd.li/snapshot/1783679346168',
+      ],
+      rules: [
+        {
+          matches: [
+            'TextView[text*="学"][text!*="天"][text!*="数"][text!*=""][text!*="化"][text!*="必"]',
+          ],
+          activityIds: [
+            'com.mistong.ewt360.web.WebActivity',
+          ],
+        },
+      ],
+    },
+  ],
+}]}
