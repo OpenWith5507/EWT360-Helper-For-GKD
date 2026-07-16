@@ -59,7 +59,7 @@
             ],
           activityIds: [
             'com.mistong.ewt360.homework.view.homework.NewHomeworkVideoPlayActivity',
-            ],
+          ],
         },
       ],
     },
@@ -80,20 +80,20 @@
         },
       ],
     },
-        {
+    {
       key: 5,
       name: '关闭眼保健操打断',
       snapshotUrls: [
         'https://i.gkd.li/snapshot/1753224680022',
-        ],
+      ],
       rules: [
         {
           matches: [
             'TextView[text^="继续学习"]',
-            ],
+          ],
           activityIds: [
             'com.mistong.ewt360.homework.view.homework.NewHomeworkVideoPlayActivity',
-            ],
+          ],
         },
       ],
     },
