@@ -1,4 +1,4 @@
-{id: 888, name: '升学e网通自定义辅助订阅', version: 7,author: '🐺',supportUri: 'https://github.com/OpenWIth5507/EWT360-Helper-For-GKD/issues', categories: [{key: 0, name: '功能辅助', enable: true}, {key: 1, name: '广告跳过', enable: true}], apps:[{
+{id: 888, name: '升学e网通自定义辅助订阅', version: 8,author: '🐺',supportUri: 'https://github.com/OpenWIth5507/EWT360-Helper-For-GKD/issues', categories: [{key: 0, name: '功能辅助', enable: true}, {key: 1, name: '广告跳过', enable: true}], apps:[{
   id: 'com.mistong.ewt360',
   groups: [
     {
@@ -135,18 +135,18 @@
       key: 8,
       name: '自动看课',
       snapshotUrls: [
-        'https://i.gkd.li/snapshot/1783679346168',
+       'https://i.gkd.li/snapshot/1783679346168',
       ],
       rules: [
-        {
-          matches: [
-            'TextView[text*="学"][text!*="天"][text!*="数"][text!*=""][text!*="化"][text!*="必"]',
-          ],
-          activityIds: [
-            'com.mistong.ewt360.web.WebActivity',
-          ],
-        },
-      ],
-    },
+       {
+         matches: [
+           '@TextView[text*="学"] - TextView[text=""]',
+         ],
+         activityIds: [
+           'com.mistong.ewt360.web.WebActivity',
+         ],
+       },
+     ],
+   },
   ],
 }]}
