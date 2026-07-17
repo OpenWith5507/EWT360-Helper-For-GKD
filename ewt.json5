@@ -89,7 +89,7 @@
       rules: [
         {
           matches: [
-            'TextView[text*="继续学习"]',
+            'TextView[text*="继续观看"]',
           ],
           activityIds: [
             'com.mistong.ewt360.homework.view.homework.NewHomeworkVideoPlayActivity',
