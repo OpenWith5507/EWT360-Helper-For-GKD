@@ -1,4 +1,4 @@
-{id: 888, name: '升学e网通自定义辅助订阅', version: 9,author: '🐺',supportUri: 'https://github.com/OpenWIth5507/EWT360-Helper-For-GKD/issues', categories: [{key: 0, name: '功能辅助', enable: true}, {key: 1, name: '广告跳过', enable: true}], apps:[{
+{id: 888, name: '升学e网通自定义辅助订阅', version: 10,author: '🐺',supportUri: 'https://github.com/OpenWIth5507/EWT360-Helper-For-GKD/issues', categories: [{key: 0, name: '功能辅助', enable: true}, {key: 1, name: '广告跳过', enable: true}], apps:[{
   id: 'com.mistong.ewt360',
   groups: [
     {
