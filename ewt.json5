@@ -1,4 +1,4 @@
-{id: 888, name: '升学e网通自定义辅助订阅', version: 8,author: '🐺',supportUri: 'https://github.com/OpenWIth5507/EWT360-Helper-For-GKD/issues', categories: [{key: 0, name: '功能辅助', enable: true}, {key: 1, name: '广告跳过', enable: true}], apps:[{
+{id: 888, name: '升学e网通自定义辅助订阅', version: 9,author: '🐺',supportUri: 'https://github.com/OpenWIth5507/EWT360-Helper-For-GKD/issues', categories: [{key: 0, name: '功能辅助', enable: true}, {key: 1, name: '广告跳过', enable: true}], apps:[{
   id: 'com.mistong.ewt360',
   groups: [
     {
@@ -92,7 +92,7 @@
             'TextView[text*="继续观看"]',
           ],
           activityIds: [
-            'com.mistong.ewt360.homework.view.homework.NewHomeworkVideoPlayActivity',
+            'com.mistong.android.commonui.dialog.EUIDialog',
           ],
         },
       ],
