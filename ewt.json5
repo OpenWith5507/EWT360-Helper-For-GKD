@@ -92,7 +92,7 @@
             'TextView[text*="继续观看"]',
           ],
           activityIds: [
-            'com.mistong.android.commonui.dialog.EUIDialog',
+            'com.mistong.android.commonui.dialog.EUIDialog','com.mistong.ewt360.homework.view.homework.NewHomeworkVideoPlayActivity',
           ],
         },
       ],
@@ -141,6 +141,23 @@
        {
          matches: [
            '@TextView[text*="学"] - TextView[text=""]',
+         ],
+         activityIds: [
+           'com.mistong.ewt360.web.WebActivity',
+         ],
+       },
+     ],
+   },
+   {
+      key: 9,
+      name: '看完返回',
+      snapshotUrls: [
+       'https://i.gkd.li/snapshot/1783679346168',
+      ],
+      rules: [
+       {
+         matches: [
+           '@TextView[text*="返回任务列表"]',
          ],
          activityIds: [
            'com.mistong.ewt360.web.WebActivity',
